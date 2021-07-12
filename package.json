@@ -1,0 +1,23 @@
+{
+  "name": "guess-game",
+  "version": "1.0.0",
+  "description": "guess game",
+  "main": "index.js",
+  "repository": "https://github.com/lee-tae-eon/guess-game.git",
+  "author": "lee-tae-eon <mktears0609@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/node": "^7.14.7",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2",
+    "socket.io": "^4.1.3"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7"
+  }
+}
