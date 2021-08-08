@@ -20,6 +20,4 @@ const server = app.listen(PORT, handleListen);
 
 const io = socketIO(server);
 
-io.on("connection", (socket) => {
-  socket.on("helloguys", () => console.log("Client: Hello"));
-});
+io.on("connection", (socket) => socket.on("MYMY", (res) => console.log(res)));
