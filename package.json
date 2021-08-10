@@ -1,11 +1,15 @@
 {
   "name": "guess-game",
   "version": "1.0.0",
-  "description": "guess game",
+  "description": "guess game with express, pug, socket.io",
   "main": "index.js",
   "repository": "https://github.com/lee-tae-eon/guess-game.git",
-  "author": "lee-tae-eon <mktears0609@gmail.com>",
-  "license": "MIT",
+  "author": {
+    "name": "Lee Tae Eon",
+    "email": "mktears0609@gmail.com",
+    "url": "https://developer-lte.tistory.com/"
+  },
+  "private": true,
   "dependencies": {
     "@babel/node": "^7.14.7",
     "@babel/core": "^7.14.6",

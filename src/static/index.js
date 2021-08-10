@@ -1,9 +1,18 @@
 // eslint-disable-next-line no-undef
 const socket = io("/");
 
-socket.on("Join", (data) => console.log(data));
+const sendMsg = (msg) => {
+  socket.emit("Msg", { msg });
+  console.log(`당신의 메세지 : ${msg}`);
+};
 
-socket.emit("MYMY", {
-  first: "taeeon",
-  last: "lee",
-});
+const setNickname = (nickname) => {
+  socket.emit("setNickname", { nickname });
+};
+
+const handleMsgNoti = (data) => {
+  const { msg, nickname } = data;
+  console.log(`${nickname} 의 메세지 : ${msg}`);
+};
+
+socket.on("msgNoti", handleMsgNoti);
